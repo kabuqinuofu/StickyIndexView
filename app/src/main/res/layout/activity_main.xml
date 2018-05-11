@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.yc.stickyindexview.StickyIndexView
+        android:id="@+id/stickyIndexView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sideBarBackgroundColor="@android:color/transparent"
+        app:sideBarFocusBackgroundColor="#3263de"
+        app:sideBarFocusTextColor="@android:color/white"
+        app:sideBarTextColor="#6a6a6a"
+        app:sideBarTextSize="14sp"
+        app:sideBarTextSpace="4dp"
+        app:sideBarWidth="24dp" />
+
+</android.support.constraint.ConstraintLayout>
