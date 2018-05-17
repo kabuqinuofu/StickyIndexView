@@ -349,13 +349,11 @@ public class StickyIndexView extends RelativeLayout implements SideBar.OnSideBar
     }
 
     public void addItemDecoration(RecyclerView.ItemDecoration itemDecoration) {
-
         mRecyclerView.addItemDecoration(itemDecoration);
     }
 
     @Override
     public void update(Observable observable, Object data) {
-
         if (data == null) return;
         List<String> indexValueList = (List<String>) data;
         mSideBar.setData(indexValueList);
@@ -363,7 +361,10 @@ public class StickyIndexView extends RelativeLayout implements SideBar.OnSideBar
     }
 
     public int getSideBarWidth() {
-
         return mSideBar.getWidth();
+    }
+
+    public RecyclerView getRecyclerView() {
+        return mRecyclerView;
     }
 }
